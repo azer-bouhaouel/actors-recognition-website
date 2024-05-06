@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  background: url(./ai.jpg);
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+button {
+  width: 110px;
+  height: 50px;
+  border-radius: 10px;
+  border: 4px solid white;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.wrapper {
+  width: 500px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  border: 4px solid white;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+
+.add-person {
+  width: 100%;
+  height: 100vh;
+  background: url(./ai.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-person #person-name {
+  width: 200px;
+  height: 45px;
+  font-size: 20px;
+  padding: 0 10px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+}
+
+.show-person {
+  width: 100%;
+  height: 100vh;
+  background: url(./ai.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.show-person img {
+  width: 150px;
+  height: 200px;
+}
+
+.res-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  border: 1px solid white;
+  margin-bottom: 40px;
+}
+
+.res-card h2 {
+  color: white;
+  margin-left: 20px;
+}
+
+.CelImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 200px;
+  display: none;
+}
+
+#selectImg {
+  position: relative;
+  width: 200px;
+}
+
+.error-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./ai.jpg);
+}
+
+.error-page .wrapper {
+  color: white;
+  border: 4px solid white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-page .wrapper button {
+  margin-top: 25px;
+}
+
+/* Spinner */
+.spinner {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgb(132, 164, 220);
+  opacity: 0.5;
+  transition: 0.4s;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner .cercle {
+  width: 150px;
+  height: 150px;
+  border: 15px solid white;
+  border-top-color: gray;
+  border-radius: 50%;
+  animation: rotation 1.5s linear infinite;
+  z-index: 999;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
