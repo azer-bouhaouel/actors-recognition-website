@@ -1,4 +1,4 @@
-# AI-face-recognition-website
+# Actor-recognition-website using AI
 
 # General logique:
 
